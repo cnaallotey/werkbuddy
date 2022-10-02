@@ -4,11 +4,6 @@
       <div class="container px-4 mx-auto">
         <div class="text-center max-w-xl mx-auto">
           <div class="mb-6 relative mx-auto w-16 h-16 bg-indigo-600 rounded-full">
-            <img
-              class="absolute top-0 left-0"
-              src="flaro-assets/images/applications/blur.svg"
-              alt=""
-            />
             <div
               class="absolute left-1/2 top-1/2 transform -translate-y-1/2 -translate-x-1/2"
             >
