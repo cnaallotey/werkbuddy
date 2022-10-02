@@ -33,6 +33,7 @@
 </template>
 
 <script setup>
+const router = useRouter();
 const menu = [
   {
     name: "Remote",
@@ -53,4 +54,9 @@ const menu = [
       "https://images.unsplash.com/photo-1573164713619-24c711fe7878?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2369&q=80",
   },
 ];
+
+onMounted(() => {
+  if (sessionStorage.getItem("company") && sessionStorage.getItem("talentInfo")) return;
+  router.push("/general_details");
+});
 </script>

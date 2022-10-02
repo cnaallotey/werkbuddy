@@ -67,7 +67,9 @@
 </template>
 
 <script setup>
+const router = useRouter();
 const talentmode = reactive({
+  mode: "Hybrid",
   salary: 1000,
   contract: "",
   officeLocation: "",
@@ -84,6 +86,10 @@ const workOptions = [
     choice: "No",
   },
 ];
+onMounted(() => {
+  if (sessionStorage.getItem("company") && sessionStorage.getItem("talentInfo")) return;
+  router.push("/general_details");
+});
 </script>
 
 //Intl.supportedValuesOf('timeZone')

@@ -81,7 +81,9 @@
 </template>
 
 <script setup>
+const router = useRouter();
 const talentmode = reactive({
+  mode: "In-person",
   salary: 1000,
   contract: "",
   officeLocation: "",
@@ -108,6 +110,11 @@ const completeRegistration = () => {
     JSON.stringify({ ...company, ...talentInfo, ...talentmode })
   );
 };
+
+onMounted(() => {
+  if (sessionStorage.getItem("company") && sessionStorage.getItem("talentInfo")) return;
+  router.push("/general_details");
+});
 </script>
 
 //Intl.supportedValuesOf('timeZone')

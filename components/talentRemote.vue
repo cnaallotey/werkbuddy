@@ -89,8 +89,10 @@
 <script setup>
 import timezone from "@/static/timezone.json";
 const timeZones = timezone;
+const router = useRouter();
 
 const talentmode = reactive({
+  mode: "Remote",
   salary: 1000,
   contract: "",
   timezonePreference: "Yes",
@@ -111,7 +113,7 @@ const workOptions = [
 //const salary = ref(1000);
 
 const completeRegistration = () => {
-  console.log(talentmode);
+  //console.log(talentmode);
   const company = JSON.parse(sessionStorage.getItem("company"));
   const talentInfo = JSON.parse(sessionStorage.getItem("talentInfo"));
   sessionStorage.setItem(
@@ -119,6 +121,11 @@ const completeRegistration = () => {
     JSON.stringify({ ...company, ...talentInfo, ...talentmode })
   );
 };
+
+onMounted(() => {
+  if (sessionStorage.getItem("company") && sessionStorage.getItem("talentInfo")) return;
+  router.push("/general_details");
+});
 </script>
 
 //Intl.supportedValuesOf('timeZone')
