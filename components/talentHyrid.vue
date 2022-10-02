@@ -15,6 +15,8 @@
             <input
               type="text"
               name="office location"
+              v-model="talentmode.officeLocation"
+              required
               id="office"
               class="shadow-sm p-2 border focus:ring-indigo-500 focus:border-indigo-500 block w-full sm:text-sm border-gray-300 rounded-md"
               placeholder="Enter office location"
@@ -28,12 +30,15 @@
           <select
             id="contract"
             name="contract"
+            required
+            v-model="talentmode.contract"
             class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
           >
+            <option></option>
             <option
               v-for="option in workOptions"
               :key="option.index"
-              value="{{option.choice}}"
+              :value="option.choice"
             >
               {{ option.caption }}
             </option>
@@ -51,9 +56,9 @@
             max="10000"
             step="50"
             id="salary"
-            v-model="salary"
+            v-model="talentmode.salary"
           />
-          <p>USD {{ salary }}</p>
+          <p>USD {{ talentmode.salary }}</p>
         </div>
         <primary-button>Complete Registration</primary-button>
       </div>
@@ -62,8 +67,11 @@
 </template>
 
 <script setup>
-import timezone from "@/static/timezone.json";
-const timeZones = timezone;
+const talentmode = reactive({
+  salary: 1000,
+  contract: "",
+  officeLocation: "",
+});
 
 const options = ["Yes", "No"];
 const workOptions = [
@@ -76,7 +84,6 @@ const workOptions = [
     choice: "No",
   },
 ];
-const salary = ref(1000);
 </script>
 
 //Intl.supportedValuesOf('timeZone')

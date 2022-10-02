@@ -5,6 +5,7 @@
     <benefits-section />
     <success-section />
     <steps-section />
+    <banner />
     <cta-section />
     <footer-section />
   </div>

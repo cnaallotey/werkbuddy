@@ -214,7 +214,7 @@
               <div class="mt-16 sm:mt-24 lg:mt-0 lg:col-span-6 px-4">
                 <div class="w-full h-full rounded-[20px] overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1573167243872-43c6433b9d40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2338&q=80"
+                    src="https://images.unsplash.com/photo-1507152832244-10d45c7eda57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80"
                     class="w-full h-full object-cover object-center"
                     alt="heroimg"
                   />

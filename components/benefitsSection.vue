@@ -111,7 +111,7 @@
             <div class="w-full h-full bg-red-50 mx-auto">
               <img
                 class="w-full h-full object-cover object-center"
-                src="https://images.unsplash.com/photo-1576267423429-569309b31e84?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=100"
+                src="https://images.unsplash.com/photo-1644502934571-c9fe89d4cde0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
                 alt=""
               />
             </div>
@@ -226,7 +226,7 @@
             <div class="w-full h-full bg-red-50 mx-auto">
               <img
                 class="w-full h-full object-cover object-center"
-                src="https://images.unsplash.com/photo-1573497019329-8c73173b95fb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=100"
+                src="https://images.unsplash.com/photo-1638913662295-9630035ef770?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2340&q=80"
                 alt=""
               />
             </div>

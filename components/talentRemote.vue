@@ -3,11 +3,10 @@
     <div class="mx-auto w-full max-w-sm lg:w-96">
       <div>
         <BackButton link="/talent_needs" />
-        <NuxtLink to="/talent_needs"> Back </NuxtLink>
         <h2 class="mt-6 text-3xl font-extrabold text-gray-900">Remote</h2>
       </div>
 
-      <div class="mt-8">
+      <form action="submit" @submit.prevent="completeRegistration()" class="mt-8">
         <div>
           <label for="timezone" class="block text-sm font-medium text-gray-700"
             >Select preferred timezone</label
@@ -15,12 +14,15 @@
           <select
             id="location"
             name="location"
+            required
+            v-model="talentmode.timezone"
             class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
           >
+            <option value=""></option>
             <option
               v-for="timezone in timeZones"
               :key="timezone.index"
-              value="{{timezone.offset}}"
+              :value="timezone.offset"
             >
               {{ timezone.name }} ({{ timezone.offset }})
             </option>
@@ -33,9 +35,10 @@
           <select
             id="location"
             name="location"
+            v-model="talentmode.timezonePreference"
             class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
           >
-            <option v-for="option in options" :key="option.index" value="{{option}}">
+            <option v-for="option in options" :key="option.index" :value="option">
               {{ option }}
             </option>
           </select>
@@ -47,12 +50,14 @@
           <select
             id="contract"
             name="contract"
+            required
+            v-model="talentmode.contract"
             class="mt-1 block w-full pl-3 pr-10 py-2 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-md"
           >
             <option
               v-for="option in workOptions"
               :key="option.index"
-              value="{{option.choice}}"
+              :value="option.choice"
             >
               {{ option.caption }}
             </option>
@@ -69,13 +74,14 @@
             min="1000"
             max="10000"
             step="50"
+            required
             id="salary"
-            v-model="salary"
+            v-model="talentmode.salary"
           />
-          <p>USD {{ salary }}</p>
+          <p>USD {{ talentmode.salary }}</p>
         </div>
-        <primary-button>Complete Registration</primary-button>
-      </div>
+        <primary-button type="submit">Complete Registration</primary-button>
+      </form>
     </div>
   </div>
 </template>
@@ -83,6 +89,13 @@
 <script setup>
 import timezone from "@/static/timezone.json";
 const timeZones = timezone;
+
+const talentmode = reactive({
+  salary: 1000,
+  contract: "",
+  timezonePreference: "Yes",
+  timezone: "",
+});
 
 const options = ["Yes", "No"];
 const workOptions = [
@@ -95,7 +108,17 @@ const workOptions = [
     choice: "No",
   },
 ];
-const salary = ref(1000);
+//const salary = ref(1000);
+
+const completeRegistration = () => {
+  console.log(talentmode);
+  const company = JSON.parse(sessionStorage.getItem("company"));
+  const talentInfo = JSON.parse(sessionStorage.getItem("talentInfo"));
+  sessionStorage.setItem(
+    "completeDetails",
+    JSON.stringify({ ...company, ...talentInfo, ...talentmode })
+  );
+};
 </script>
 
 //Intl.supportedValuesOf('timeZone')
