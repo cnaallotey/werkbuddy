@@ -35,11 +35,6 @@
                 <div
                   class="relative w-14 h-14 text-2xl text-black font-bold bg-indigo-100 group-hover:bg-indigo-600 group-hover:text-white rounded-full"
                 >
-                  <img
-                    class="absolute top-0 left-0"
-                    src="flaro-assets/images/how-it-works/gradient.svg"
-                    alt=""
-                  />
                   <span
                     class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"
                     >2</span
