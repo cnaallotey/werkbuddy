@@ -129,9 +129,7 @@ const completeRegistration = async () => {
         ...talentmode,
       },
     });
-    if (res.success) {
-      router.push("/success");
-    }
+    await navigateTo("/success");
   } catch (error) {
     console.log(error);
   }

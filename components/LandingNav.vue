@@ -57,9 +57,9 @@ const showMenu = ref(false);
                   class="flex flex-col items-start justify-center w-full space-x-6 text-center lg:space-x-8 md:w-2/3 md:mt-0 md:flex-row md:items-center"
                 >
                   <NuxtLink
-                    to="/catchup-plus"
+                    to="/#review"
                     class="inline-block w-full py-2 mx-0 ml-6 font-medium text-left text-black md:ml-0 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center"
-                    >Catch Up Plus</NuxtLink
+                    >Students</NuxtLink
                   >
                   <NuxtLink
                     to="/companies"
@@ -73,7 +73,7 @@ const showMenu = ref(false);
                   <a
                     href="#"
                     class="w-full px-6 py-2 mr-0 text-gray-700 md:px-3 md:mr-2 lg:mr-3 md:w-auto"
-                    >Contact Us</a
+                    >Catchup Plus+</a
                   >
                 </div>
               </div>
@@ -150,7 +150,7 @@ const showMenu = ref(false);
               <NuxtLink
                 to="/catchup-plus"
                 target="_blank"
-                class="inline-flex items-center justify-center w-full px-8 py-4 text-base font-medium leading-6 text-pink-600 bg-pink-100 border border-transparent rounded-full xl:px-10 md:w-auto hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-200"
+                class="hidden items-center justify-center w-full px-8 py-4 text-base font-medium leading-6 text-pink-600 bg-pink-100 border border-transparent rounded-full xl:px-10 md:w-auto hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-200"
                 >Catch Up Plus
               </NuxtLink>
             </span>

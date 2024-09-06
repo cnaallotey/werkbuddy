@@ -108,6 +108,7 @@ const completeRegistration = async () => {
         ...talentmode,
       },
     });
+    await navigateTo("/success");
   } catch (error) {
     console.log(error);
   }
