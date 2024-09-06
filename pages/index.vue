@@ -1,16 +1,9 @@
 <template>
   <div>
-    <heroSectionVue />
-    <feature-section />
-    <benefits-section />
-    <success-section />
-    <steps-section />
-    <banner />
-    <cta-section />
-    <footer-section />
+    <LandingNav />
+    <LandingSection />
+    <LandingTerms />
+    <LandingCta />
+    <LandingFooter />
   </div>
 </template>
-
-<script setup>
-import heroSectionVue from "~~/components/heroSection.vue";
-</script>

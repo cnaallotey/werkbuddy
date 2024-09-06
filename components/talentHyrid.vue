@@ -6,7 +6,7 @@
         <h2 class="mt-6 text-3xl font-extrabold text-gray-900">Hybrid</h2>
       </div>
 
-      <div class="mt-8">
+      <form type="submit" @submit.prevent="completeRegistration()" class="mt-8">
         <div>
           <label for="office location" class="block text-sm font-medium text-gray-700"
             >Office Location</label
@@ -60,8 +60,8 @@
           />
           <p>USD {{ talentmode.salary }}</p>
         </div>
-        <primary-button>Complete Registration</primary-button>
-      </div>
+        <primary-button type="submit">Complete Registration</primary-button>
+      </form>
     </div>
   </div>
 </template>
@@ -90,6 +90,26 @@ onMounted(() => {
   if (sessionStorage.getItem("company") && sessionStorage.getItem("talentInfo")) return;
   router.push("/general_details");
 });
-</script>
 
-//Intl.supportedValuesOf('timeZone')
+const completeRegistration = async () => {
+  console.log(talentmode);
+  const company = JSON.parse(sessionStorage.getItem("company"));
+  const talentInfo = JSON.parse(sessionStorage.getItem("talentInfo"));
+  sessionStorage.setItem(
+    "completeDetails",
+    JSON.stringify({ ...company, ...talentInfo, ...talentmode })
+  );
+  try {
+    const res = await $fetch("https://api.headlessforms.cloud/api/v1/form/lYL5OID7c9", {
+      method: "POST",
+      body: {
+        ...company,
+        ...talentInfo,
+        ...talentmode,
+      },
+    });
+  } catch (error) {
+    console.log(error);
+  }
+};
+</script>

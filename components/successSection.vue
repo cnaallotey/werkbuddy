@@ -2,7 +2,7 @@
   <div>
     <div class="bg-black">
       <div
-        class="max-w-4xl mx-auto px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 lg:max-w-7xl lg:pt-24 lg:px-8"
+        class="mx-auto px-4 py-16 sm:px-6 sm:pt-20 sm:pb-24 max-w-screen-xl lg:pt-24 lg:px-8"
       >
         <h2 class="text-3xl font-extrabold text-white tracking-tight">
           Lifting the heavy load off your HR teams
@@ -14,31 +14,49 @@
           <div>
             <div>
               <span
-                class="flex items-center justify-center h-12 w-12 rounded-md bg-white bg-opacity-10"
+                class="flex items-center justify-center h-12 w-12 rounded-md bg-white text-white bg-opacity-10"
               >
-                <!-- Heroicon name: outline/inbox -->
                 <svg
-                  class="h-6 w-6 text-white"
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
+                  class="size-8"
+                  viewBox="0 0 256 256"
                 >
-                  <path
+                  <rect width="256" height="256" fill="none" />
+                  <line
+                    x1="120"
+                    y1="160"
+                    x2="216"
+                    y2="64"
+                    fill="none"
+                    stroke="currentColor"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2.586a1 1 0 00-.707.293l-2.414 2.414a1 1 0 01-.707.293h-3.172a1 1 0 01-.707-.293l-2.414-2.414A1 1 0 006.586 13H4"
+                    stroke-width="16"
+                  />
+                  <path
+                    d="M56.44,160a73,73,0,0,1-.44-8,72.06,72.06,0,0,1,95-68.25"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  />
+                  <path
+                    d="M220.62,104.64a104.38,104.38,0,0,1,5.48,82,8,8,0,0,1-7.57,5.37H37.46a8.05,8.05,0,0,1-7.57-5.41A104.06,104.06,0,0,1,24,151.19C24.44,94,71.73,47.49,129,48a103.68,103.68,0,0,1,46.4,11.38"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
                   />
                 </svg>
               </span>
             </div>
             <div class="mt-6">
-              <h3 class="text-lg font-medium text-white">Speed to hire</h3>
-              <p class="mt-2 text-base text-slate-200">
-                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna
-                sit morbi lobortis.
+              <h3 class="text-xl font-medium text-white">Speed to hire</h3>
+              <p class="mt-2 text-base text-slate-300">
+                We streamline the hiring process to accelerate recruitment timelines,
+                ensuring you fill positions quickly with top talent.
               </p>
             </div>
           </div>
@@ -46,31 +64,64 @@
           <div>
             <div>
               <span
-                class="flex items-center justify-center h-12 w-12 rounded-md bg-white bg-opacity-10"
+                class="flex items-center justify-center h-12 w-12 rounded-md bg-white text-white bg-opacity-10"
               >
-                <!-- Heroicon name: outline/users -->
                 <svg
-                  class="h-6 w-6 text-white"
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
+                  class="size-8"
+                  viewBox="0 0 256 256"
                 >
-                  <path
+                  <rect width="256" height="256" fill="none" />
+                  <rect
+                    x="32"
+                    y="64"
+                    width="192"
+                    height="144"
+                    rx="8"
+                    fill="none"
+                    stroke="currentColor"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"
+                    stroke-width="16"
+                  />
+                  <path
+                    d="M168,64V48a16,16,0,0,0-16-16H104A16,16,0,0,0,88,48V64"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  />
+                  <path
+                    d="M224,118.31A191.09,191.09,0,0,1,128,144a191.14,191.14,0,0,1-96-25.68"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
+                  />
+                  <line
+                    x1="112"
+                    y1="112"
+                    x2="144"
+                    y2="112"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
                   />
                 </svg>
               </span>
             </div>
             <div class="mt-6">
-              <h3 class="text-lg font-medium text-white">Avoiding Bad Hires</h3>
-              <p class="mt-2 text-base text-slate-200">
-                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna
-                sit morbi lobortis.
+              <h3 class="text-xl font-medium text-white">Avoiding Bad Hires</h3>
+              <p class="mt-2 text-base text-slate-300">
+                Making the wrong hiring decision can be costly and disruptive. We
+                implement thorough vetting procedures, including detailed background
+                checks, skill assessments, and cultural fit evaluations, to ensure that
+                candidates not only meet the technical requirements but also align with
+                your company’s values and goals.
               </p>
             </div>
           </div>
@@ -78,31 +129,33 @@
           <div>
             <div>
               <span
-                class="flex items-center justify-center h-12 w-12 rounded-md bg-white bg-opacity-10"
+                class="flex items-center justify-center h-12 w-12 rounded-md text-white bg-white bg-opacity-10"
               >
-                <!-- Heroicon name: outline/trash -->
                 <svg
-                  class="h-6 w-6 text-white"
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
+                  class="size-8"
+                  viewBox="0 0 256 256"
                 >
+                  <rect width="256" height="256" fill="none" />
                   <path
+                    d="M40,56V184a16,16,0,0,0,16,16H216a8,8,0,0,0,8-8V80a8,8,0,0,0-8-8H56A16,16,0,0,1,40,56h0A16,16,0,0,1,56,40H192"
+                    fill="none"
+                    stroke="currentColor"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"
+                    stroke-width="16"
                   />
+                  <circle cx="180" cy="132" r="12" />
                 </svg>
               </span>
             </div>
             <div class="mt-6">
-              <h3 class="text-lg font-medium text-white">Managing Overhead Costs</h3>
-              <p class="mt-2 text-base text-slate-200">
-                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna
-                sit morbi lobortis.
+              <h3 class="text-xl font-medium text-white">Managing Overhead Costs</h3>
+              <p class="mt-2 text-base text-slate-300">
+                We offer solutions that help manage and reduce these expenses, such as
+                optimized recruitment strategies and efficient onboarding processes. By
+                leveraging our expertise, you can minimise unnecessary expenditures and
+                achieve cost-effective hiring solutions.
               </p>
             </div>
           </div>
@@ -110,31 +163,43 @@
           <div>
             <div>
               <span
-                class="flex items-center justify-center h-12 w-12 rounded-md bg-white bg-opacity-10"
+                class="flex items-center justify-center h-12 w-12 rounded-md bg-white text-white bg-opacity-10"
               >
                 <!-- Heroicon name: outline/pencil-alt -->
                 <svg
-                  class="h-6 w-6 text-white"
                   xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  aria-hidden="true"
+                  class="size-8"
+                  viewBox="0 0 256 256"
                 >
-                  <path
+                  <rect width="256" height="256" fill="none" />
+                  <circle
+                    cx="128"
+                    cy="128"
+                    r="40"
+                    fill="none"
+                    stroke="currentColor"
                     stroke-linecap="round"
                     stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"
+                    stroke-width="16"
+                  />
+                  <path
+                    d="M41.43,178.09A99.14,99.14,0,0,1,31.36,153.8l16.78-21a81.59,81.59,0,0,1,0-9.64l-16.77-21a99.43,99.43,0,0,1,10.05-24.3l26.71-3a81,81,0,0,1,6.81-6.81l3-26.7A99.14,99.14,0,0,1,102.2,31.36l21,16.78a81.59,81.59,0,0,1,9.64,0l21-16.77a99.43,99.43,0,0,1,24.3,10.05l3,26.71a81,81,0,0,1,6.81,6.81l26.7,3a99.14,99.14,0,0,1,10.07,24.29l-16.78,21a81.59,81.59,0,0,1,0,9.64l16.77,21a99.43,99.43,0,0,1-10,24.3l-26.71,3a81,81,0,0,1-6.81,6.81l-3,26.7a99.14,99.14,0,0,1-24.29,10.07l-21-16.78a81.59,81.59,0,0,1-9.64,0l-21,16.77a99.43,99.43,0,0,1-24.3-10l-3-26.71a81,81,0,0,1-6.81-6.81Z"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="16"
                   />
                 </svg>
               </span>
             </div>
             <div class="mt-6">
-              <h3 class="text-lg font-medium text-white">Quality Control</h3>
-              <p class="mt-2 text-base text-slate-200">
-                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna
-                sit morbi lobortis.
+              <h3 class="text-xl font-medium text-white">Quality Control</h3>
+              <p class="mt-2 text-base text-slate-300">
+                We enforce rigorous quality control measures throughout the hiring process
+                to ensure that every candidate meets your organization’s standards and
+                requirements. Our commitment to quality ensures that you consistently
+                receive top-tier talent and exceptional service.
               </p>
             </div>
           </div>

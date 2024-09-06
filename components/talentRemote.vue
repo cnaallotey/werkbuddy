@@ -112,16 +112,30 @@ const workOptions = [
 ];
 //const salary = ref(1000);
 
-const completeRegistration = () => {
-  //console.log(talentmode);
+const completeRegistration = async () => {
+  console.log(talentmode);
   const company = JSON.parse(sessionStorage.getItem("company"));
   const talentInfo = JSON.parse(sessionStorage.getItem("talentInfo"));
   sessionStorage.setItem(
     "completeDetails",
     JSON.stringify({ ...company, ...talentInfo, ...talentmode })
   );
+  try {
+    const res = await $fetch("https://api.headlessforms.cloud/api/v1/form/lYL5OID7c9", {
+      method: "POST",
+      body: {
+        ...company,
+        ...talentInfo,
+        ...talentmode,
+      },
+    });
+    if (res.success) {
+      router.push("/success");
+    }
+  } catch (error) {
+    console.log(error);
+  }
 };
-
 onMounted(() => {
   if (sessionStorage.getItem("company") && sessionStorage.getItem("talentInfo")) return;
   router.push("/general_details");

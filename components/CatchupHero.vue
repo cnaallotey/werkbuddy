@@ -82,7 +82,7 @@
             </div>
             <div class="flex">
               <NuxtLink
-                to="/general_details"
+                to="/catchup-plus/register"
                 class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-gray-600 hover:bg-gray-700"
               >
                 Register
@@ -171,43 +171,18 @@
                 class="px-4 sm:px-6 sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left lg:flex lg:items-center"
               >
                 <div>
-                  <a
-                    href="#"
-                    class="hidden flex-col lg:flex-row items-center text-white bg-gray-900 rounded-full p-1 pr-2 sm:text-base lg:text-sm xl:text-base hover:text-gray-200"
-                  >
-                    <span
-                      class="px-3 py-0.5 text-white text-xs font-semibold leading-5 uppercase tracking-wide w-full lg:w-fit text-center lg:text-left bg-indigo-500 rounded-full"
-                      >We're Launching soon</span
-                    >
-                    <span class="ml-4 text-sm">Grow faster and stay competitive </span>
-                    <!-- Heroicon name: solid/chevron-right -->
-                    <svg
-                      class="ml-2 w-5 h-5 text-gray-500 hidden lg:block"
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        fill-rule="evenodd"
-                        d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z"
-                        clip-rule="evenodd"
-                      />
-                    </svg>
-                  </a>
                   <h1
                     class="mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:leading-none lg:mt-6 lg:text-5xl xl:text-6xl"
                   >
-                    <span class="md:block">Utilize a </span>
-                    <span class="text-indigo-400 md:block">vetted and experienced </span>
-                    <span class="md:block"> on-demand workforce.</span>
+                    Book a <span class="text-pink-600">1:1 session</span> with a career
+                    mentor, designed to help you land an in-demand job and advance in your
+                    career.
                   </h1>
                   <p
                     class="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl"
                   >
-                    Are you launching a business in a new market, expanding quickly, or
-                    driving business growth? Get connected to a vetted and talented
-                    workforce and ambitious graduates from Africa.
+                    Get personalized support for interview preparation, real-world
+                    projects, career strategy, and additional studies.
                   </p>
                 </div>
               </div>

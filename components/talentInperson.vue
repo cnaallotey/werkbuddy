@@ -101,7 +101,7 @@ const workOptions = [
   },
 ];
 
-const completeRegistration = () => {
+const completeRegistration = async () => {
   console.log(talentmode);
   const company = JSON.parse(sessionStorage.getItem("company"));
   const talentInfo = JSON.parse(sessionStorage.getItem("talentInfo"));
@@ -109,6 +109,18 @@ const completeRegistration = () => {
     "completeDetails",
     JSON.stringify({ ...company, ...talentInfo, ...talentmode })
   );
+  try {
+    const res = await $fetch("https://api.headlessforms.cloud/api/v1/form/lYL5OID7c9", {
+      method: "POST",
+      body: {
+        ...company,
+        ...talentInfo,
+        ...talentmode,
+      },
+    });
+  } catch (error) {
+    console.log(error);
+  }
 };
 
 onMounted(() => {
