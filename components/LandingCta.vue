@@ -2,7 +2,7 @@
   <div class="bg-white">
     <div class="mx-auto max-w-screen-xl py-12 sm:px-6 sm:py-12 lg:px-8">
       <div
-        class="relative isolate overflow-hidden bg-gray-900 px-6 pt-12 shadow-2xl sm:rounded-xl sm:px-16 md:pt-12 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0"
+        class="relative isolate overflow-hidden bg-gray-900 px-6 pt-12 pb-12 shadow-2xl sm:rounded-xl sm:px-16 md:pt-12 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0"
       >
         <svg
           viewBox="0 0 1024 1024"

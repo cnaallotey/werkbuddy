@@ -55,7 +55,7 @@ const courses = [
 </script>
 
 <template>
-  <div class="mt-40">
+  <div class="mt-10 md:mt-40">
     <div
       class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center gap-10 md:gap-16"
     >
@@ -69,7 +69,7 @@ const courses = [
       >
         <span
           v-for="item in courses"
-          class="whitespace-nowrap rounded-full border-2 px-4 py-2 text-2xl inline-flex items-center justify-center gap-3"
+          class="whitespace-nowrap rounded-full border-2 px-4 py-2 text-lg md:text-2xl inline-flex items-center justify-center gap-3"
           :class="item.color"
         >
           <span

@@ -4,18 +4,20 @@ const showMenu = ref(false);
 
 <template>
   <div>
-    <section class="w-full px-6 pb-12 antialiased bg-white">
+    <section
+      class="w-full px-6 pb-12 antialiased bg-gradient-to-t from-pink-400/10 to-transparent"
+    >
       <div class="mx-auto max-w-7xl">
         <nav class="relative z-50 h-24 select-none">
           <div
             class="container relative flex flex-wrap items-center justify-between h-24 mx-auto overflow-hidden font-medium border-b border-gray-200 md:overflow-visible lg:justify-center sm:px-4 md:px-2 lg:px-0"
           >
-            <div class="flex items-center justify-start w-1/4 h-full pr-4">
+            <div class="flex items-center justify-start md:w-1/4 h-full pr-4">
               <a
-                href="#_"
-                class="flex items-center p-2 rounded-md space-x-2 font-extrabold bg-gray-900"
+                href="/"
+                class="flex items-center p-2 rounded-md font-extrabold bg-gray-900"
               >
-                <img src="/images/logo.png" class="h-12" alt="" />
+                <img src="/images/logo.png" class="h-9 shrink-0 md:h-12" alt="" />
               </a>
             </div>
             <div
@@ -70,10 +72,10 @@ const showMenu = ref(false);
                 <div
                   class="flex flex-col items-start justify-end w-full pt-4 md:items-center md:w-1/3 md:flex-row md:py-0"
                 >
-                  <a
-                    href="#"
+                  <NuxtLink
+                    to="/catchup-plus"
                     class="w-full px-6 py-2 mr-0 text-gray-700 md:px-3 md:mr-2 lg:mr-3 md:w-auto"
-                    >Catchup Plus+</a
+                    >Catchup Plus+</NuxtLink
                   >
                 </div>
               </div>
@@ -119,7 +121,7 @@ const showMenu = ref(false);
 
         <!-- Main Hero Content -->
         <div
-          class="container max-w-sm py-32 mx-auto mt-px text-left sm:max-w-md md:max-w-lg sm:px-4 md:max-w-none md:text-center"
+          class="container max-w-sm py-10 md:py-32 mx-auto mt-px text-left sm:max-w-md md:max-w-lg sm:px-4 md:max-w-none md:text-center"
         >
           <h1
             class="text-3xl font-bold leading-10 tracking-tight text-left text-gray-900 md:text-center sm:text-4xl md:text-7xl lg:text-8xl"

@@ -9,7 +9,7 @@
         ><img src="@/static/assets/logo.png" class="h-[56px] w-auto" alt="logo"
       /></a>
       <p
-        class="mt-4 text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l sm:border-gray-200 sm:mt-0"
+        class="mt-4 text-sm text-center md:text-left text-gray-500 sm:ml-4 sm:pl-4 sm:border-l sm:border-gray-200 sm:mt-0"
       >
         &copy; 2024 Werkbuddy - A subsidy for Thrive Africa. All Rights Reserved.
       </p>

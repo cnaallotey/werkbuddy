@@ -40,44 +40,6 @@
                   <span class="sr-only">Workflow</span>
                   <logo-section />
                 </a>
-                <div class="-mr-2 items-center hidden">
-                  <button
-                    type="button"
-                    class="bg-gray-800 rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:bg-gray-700 focus:outline-none focus:ring-2 focus-ring-inset focus:ring-white"
-                    aria-expanded="false"
-                  >
-                    <span class="sr-only">Open main menu</span>
-                    <!-- Heroicon name: outline/menu -->
-                    <svg
-                      class="h-6 w-6"
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      stroke="currentColor"
-                      aria-hidden="true"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M4 6h16M4 12h16M4 18h16"
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <div class="hidden space-x-10 md:ml-10">
-                <a href="#" class="font-medium text-white hover:text-gray-300">Product</a>
-
-                <a href="#" class="font-medium text-white hover:text-gray-300"
-                  >Features</a
-                >
-
-                <a href="#" class="font-medium text-white hover:text-gray-300"
-                  >Marketplace</a
-                >
-
-                <a href="#" class="font-medium text-white hover:text-gray-300">Company</a>
               </div>
             </div>
             <div class="flex">
@@ -174,9 +136,8 @@
                   <h1
                     class="mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:leading-none lg:mt-6 lg:text-5xl xl:text-6xl"
                   >
-                    Book a <span class="text-pink-600">1:1 session</span> with a career
-                    mentor, designed to help you land an in-demand job and advance in your
-                    career.
+                    Book a <span class="">1:1 session</span> with a career mentor,
+                    designed to help you land an in-demand job and advance in your career.
                   </h1>
                   <p
                     class="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl"
@@ -189,7 +150,7 @@
               <div class="mt-16 sm:mt-24 lg:mt-0 lg:col-span-6 px-4">
                 <div class="w-full h-full rounded-[20px] overflow-hidden">
                   <img
-                    src="https://images.unsplash.com/photo-1507152832244-10d45c7eda57?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80"
+                    src="/images/catchup-hero.jpg"
                     class="w-full h-full object-cover object-center"
                     alt="heroimg"
                   />
