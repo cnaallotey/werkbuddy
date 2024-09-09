@@ -55,18 +55,11 @@ async function onSubmit() {
 </script>
 
 <template>
-  <div class="w-full min-h-screen bg-white lg:bg-slate-900 flex flex-col">
+  <div class="w-full h-screen bg-white lg:bg-slate-900 flex flex-col">
     <div class="h-full flex">
       <div
-        class="hidden xl:block xl:w-[30%] h-[100vh] bg-[url('/images/hiring.jpg')] bg-cover bg-bottom-center overflow-hidden"
+        class="w-full bg-[url('/images/hiring.jpg')] bg-cover bg-center h-full p-4 flex items-center justify-center"
       >
-        <img
-          src="/images/hiring.jpg"
-          class="w-full h-full object-cover object-bottom-right"
-          alt="hing image"
-        />
-      </div>
-      <div class="xl:w-[70%] w-full h-[100vh]p-4 flex items-center justify-center">
         <div
           v-if="!success"
           class="xl:rounded-3xl max-w-2xl w-full bg-white p-8 shadow-lg lg:col-span-3 lg:p-12"
@@ -78,7 +71,7 @@ async function onSubmit() {
             <img src="/images/logo.png" class="h-12" alt="" />
           </a>
           <h1 class="text-2xl font-bold my-5">
-            Register for <span class="text-slate-500">Catchup +</span>
+            Register for <span class="text-pink-500">Catchup +</span>
           </h1>
           <form action="submit" @submit.prevent="onSubmit()" class="space-y-4">
             <div class="grid gap-1.5">

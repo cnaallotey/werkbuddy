@@ -31,15 +31,8 @@ async function onSubmit() {
   <div class="w-full min-h-screen bg-slate-900 flex flex-col">
     <div class="h-full flex">
       <div
-        class="hidden xl:block xl:w-[30%] h-[100vh] bg-[url('/images/hiring.jpg')] bg-cover bg-bottom-center overflow-hidden"
+        class="w-full bg-[url('/images/meeting.jpg')] bg-center bg-cover h-[100vh] p-4 flex items-center justify-center"
       >
-        <img
-          src="/images/hiring.jpg"
-          class="w-full h-full object-cover object-bottom-right"
-          alt="hing image"
-        />
-      </div>
-      <div class="xl:w-[70%] w-full h-[100vh]p-4 flex items-center justify-center">
         <div
           v-if="!success"
           class="rounded-3xl max-w-2xl w-full bg-white p-8 shadow-lg lg:col-span-3 lg:p-12"

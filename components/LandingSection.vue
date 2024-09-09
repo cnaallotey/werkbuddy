@@ -36,7 +36,7 @@
     </div>
     <div class="mx-auto max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
       <div class="grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-16">
-        <div class="lg:py-24 lg:order-2">
+        <div class="lg:py-24 order-2">
           <h2 class="text-3xl text-center md:text-left font-bold sm:text-4xl">
             Grow your Business with In-Demand and Relevant Skills
           </h2>
@@ -47,9 +47,7 @@
             Marketing, Software Engineering, and Product Management.
           </p>
         </div>
-        <div
-          class="relative h-64 overflow-hidden rounded-lg lg:order-1 sm:h-80 lg:h-full"
-        >
+        <div class="relative h-64 overflow-hidden order-1 rounded-lg sm:h-80 lg:h-full">
           <img
             alt=""
             src="/images/employee.jpg"

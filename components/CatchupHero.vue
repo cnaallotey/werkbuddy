@@ -38,7 +38,7 @@
               <div class="flex items-center justify-between w-full md:w-auto">
                 <a href="#">
                   <span class="sr-only">Workflow</span>
-                  <logo-section />
+                  <LogoSection />
                 </a>
               </div>
             </div>

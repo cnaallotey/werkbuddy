@@ -6,7 +6,7 @@
 </template>
 
 <style>
-body {
+html {
   scroll-behavior: smooth;
 }
 </style>
