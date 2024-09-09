@@ -1,18 +1,17 @@
 <script setup>
-import { PhWallet, PhClockUser, PhBuildingOffice } from "@phosphor-icons/vue";
 const points = ref([
   {
-    img: PhWallet,
+    img: "wallet",
     title: "Set Your Budget",
     description: "Decide how much you are willing to pay for a role.",
   },
   {
-    img: PhClockUser,
+    img: "clockuser",
     title: "Choose Your Timezone",
     description: "Schedule according to your preferred time zone.",
   },
   {
-    img: PhBuildingOffice,
+    img: "buildingoffice",
     title: "Flexible Work Options",
     description:
       "Hire for remote, hybrid, on-site, internship, NSS, Graduate Trainee, full-time, or contract positions.",
@@ -43,7 +42,7 @@ const points = ref([
             data-primary="blue-500"
             data-rounded="rounded-full"
           >
-            <component :is="point.img" class="size-8" />
+            <img :src="`/images/icons/${point.img}.svg`" class="size-8" />
           </div>
           <h4 class="text-xl font-medium text-gray-700">{{ point.title }}</h4>
           <p class="text-base text-center text-gray-500">

@@ -1,53 +1,42 @@
 <script setup>
-import {
-  PhFileJs,
-  PhCodaLogo,
-  PhImage,
-  PhBrowsers,
-  PhSidebar,
-  PhFileCsv,
-  PhStorefront,
-  PhHeadCircuit,
-} from "@phosphor-icons/vue";
-
 const courses = [
   {
-    icon: PhFileJs,
+    icon: "filejs",
     name: "Software Engineering",
     color: "text-blue-500 border-blue-500",
   },
   {
-    icon: PhCodaLogo,
+    icon: "coda-logo",
     name: "Product Management",
     color: "text-rose-500 border-rose-500",
   },
   {
-    icon: PhImage,
+    icon: "image",
     name: "Graphic Design",
     color: "text-pink-500 border-pink-500",
   },
   {
-    icon: PhSidebar,
+    icon: "sidebar",
     name: "UI/UX Design",
     color: "text-green-500 border-green-500",
   },
   {
-    icon: PhBrowsers,
+    icon: "browsers",
     name: "Website Development",
     color: "text-indigo-500 border-indigo-500",
   },
   {
-    icon: PhFileCsv,
+    icon: "file-csv",
     name: "Data Science",
     color: "text-blue-500 border-blue-500",
   },
   {
-    icon: PhStorefront,
+    icon: "storefront",
     name: "Digital Marketing",
     color: "text-amber-500 border-amber-500",
   },
   {
-    icon: PhHeadCircuit,
+    icon: "head-circuit",
     name: "Machine Learning and AI",
     color: "text-orange-500 border-orange-500",
   },
@@ -73,7 +62,7 @@ const courses = [
           :class="item.color"
         >
           <span
-            ><component :is="item.icon" class="sixe-6 md:size-8" weight="fill"
+            ><InlineSvg :src="`/images/icons/${item.icon}.svg`" class="size-6 md:size-8"
           /></span>
           <span>{{ item.name }}</span>
         </span>
