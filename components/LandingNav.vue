@@ -1,5 +1,13 @@
 <script setup>
 const showMenu = ref(false);
+
+watch(showMenu, () => {
+  if (showMenu.value) {
+    document.body.classList.add("overflow-hidden");
+  } else {
+    document.body.classList.remove("overflow-hidden");
+  }
+});
 </script>
 
 <template>
@@ -8,7 +16,7 @@ const showMenu = ref(false);
       class="w-full px-6 pb-12 antialiased bg-gradient-to-t from-pink-400/10 to-transparent"
     >
       <div class="mx-auto max-w-7xl">
-        <nav class="relative z-50 h-24 select-none">
+        <nav class="relative bg-white top-0 z-[1000] h-24 select-none">
           <div
             class="container relative flex flex-wrap items-center justify-between h-24 mx-auto overflow-hidden font-medium border-b border-gray-200 md:overflow-visible lg:justify-center sm:px-4 md:px-2 lg:px-0"
           >
@@ -22,21 +30,23 @@ const showMenu = ref(false);
             </div>
             <div
               class="left-0 fixed top-20 items-start w-full h-full p-4 text-sm bg-gray-900 bg-opacity-50 md:items-center md:w-3/4 lg:text-base md:bg-transparent md:p-0 md:relative md:top-7 md:flex"
-              :class="showMenu ? '!block' : '!hidden lg:!block'"
+              :class="showMenu ? '!block' : '!hidden  lg:!block'"
             >
               <div
-                class="flex-col w-full h-auto overflow-hidden bg-white rounded-lg md:bg-transparent md:overflow-visible md:rounded-none md:relative md:flex md:flex-row"
+                class="flex-col w-full h-auto overflow-hidden p-5 bg-white rounded-lg md:bg-transparent md:overflow-visible md:rounded-none md:relative md:flex md:flex-row"
               >
                 <div
                   class="flex flex-col items-start justify-center w-full space-x-6 text-center lg:space-x-8 md:w-2/3 md:mt-0 md:flex-row md:items-center"
                 >
                   <NuxtLink
                     to="/#review"
+                    @click="showMenu = false"
                     class="inline-block w-full py-2 mx-0 ml-6 font-medium text-left text-gray-700 md:ml-0 md:w-auto md:px-0 md:mx-2 lg:mx-3 md:text-center"
                     >Students</NuxtLink
                   >
                   <NuxtLink
                     to="/companies"
+                    @click="showMenu = false"
                     class="inline-block w-full py-2 mx-0 font-medium text-left text-gray-700 md:w-auto md:px-0 md:mx-2 hover:text-black lg:mx-3 md:text-center"
                     >Employers</NuxtLink
                   >
@@ -46,6 +56,7 @@ const showMenu = ref(false);
                 >
                   <NuxtLink
                     to="/catchup-plus"
+                    @click="showMenu = false"
                     class="w-auto px-6 py-2 mr-0 text-white bg-pink-500 rounded-full md:px-3 md:mr-2 lg:mr-3 md:w-auto"
                     >Catchup Plus+</NuxtLink
                   >

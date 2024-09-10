@@ -36,7 +36,7 @@ const program = [
         Packages
       </h2>
 
-      <div class="max-w-screen-xl px-4 py-8 sm:px-6 lg:px-8">
+      <div class="max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div
           class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:items-stretch md:grid-cols-3 md:gap-8"
         >

@@ -30,10 +30,10 @@
           <h3 class="text-2xl font-extrabold text-indigo-500 tracking-tight sm:text-3xl">
             Hire from Werkbuddy Today!
           </h3>
-          <p class="mt-3 text-sm text-gray-500 mb-4">
+          <!-- <p class="mt-3 text-sm text-gray-500 mb-4">
             Join our waitlist today! Get notified when we launch.
-          </p>
-          <form class="mb-9" action="submit" @submit.prevent="registerHome()">
+          </p> -->
+          <form class="my-9" action="submit" @submit.prevent="registerHome()">
             <div class="mb-5">
               <input
                 class="px-4 py-3 w-full text-gray-500 font-medium text-center placeholder-gray-500 outline-none border border-gray-300 rounded-lg focus:ring focus:ring-indigo-300"
