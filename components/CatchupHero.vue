@@ -136,14 +136,14 @@
                   <h1
                     class="mt-4 text-4xl tracking-tight font-extrabold text-white sm:mt-5 sm:leading-none lg:mt-6 lg:text-5xl xl:text-6xl"
                   >
-                    Book a <span class="">1:1 session</span> with a career mentor,
-                    designed to help you land an in-demand job and advance in your career.
+                    Book a <span class="">1:1 session</span> with a career mentor
                   </h1>
                   <p
                     class="mt-3 text-base text-gray-300 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl"
                   >
+                    Designed to help you land an in-demand job and advance in your career.
                     Get personalized support for interview preparation, real-world
-                    projects, career strategy, and additional studies.
+                    projects, career strategy, and extra studies.
                   </p>
                 </div>
               </div>

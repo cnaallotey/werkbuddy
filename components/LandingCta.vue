@@ -1,8 +1,8 @@
 <template>
   <div class="bg-white">
-    <div class="mx-auto max-w-screen-xl py-12 sm:px-6 sm:py-12 lg:px-8">
+    <div class="mx-auto max-w-screen-lg py-12 sm:px-6 sm:pb-12 lg:py-8">
       <div
-        class="relative isolate overflow-hidden bg-gray-900 px-6 pt-12 pb-12 shadow-2xl sm:rounded-xl sm:px-16 md:pt-12 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0"
+        class="relative isolate overflow-hidden bg-gray-900 px-6 pt-12 pb-12 md:pb-0 shadow-2xl sm:rounded-xl sm:px-16 md:pt-12 lg:flex lg:gap-x-20 lg:px-24 lg:pt-0"
       >
         <svg
           viewBox="0 0 1024 1024"
@@ -24,15 +24,11 @@
           </defs>
         </svg>
         <div
-          class="mx-auto max-w-md text-center lg:mx-0 lg:flex-auto lg:py-32 lg:text-left"
+          class="mx-auto max-w-xl text-center lg:flex-auto flex flex-col items-center lg:py-20"
         >
           <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">
-            Boost your productivity.<br />Start using our app today.
+            Start exploring the digital skills that matter most to your success today!
           </h2>
-          <p class="mt-6 text-lg leading-8 text-gray-300">
-            Ac euismod vel sit maecenas id pellentesque eu sed consectetur. Malesuada
-            adipiscing sagittis vel nulla.
-          </p>
           <div
             class="flex flex-col items-center justify-start mt-8 space-y-4 text-center sm:flex-row sm:space-y-0 sm:space-x-4"
           >
@@ -40,7 +36,7 @@
               <NuxtLink
                 to="/students/register"
                 target="_blank"
-                class="inline-flex items-center justify-center w-full px-8 py-4 text-base font-medium leading-6 text-gray-900 bg-white border border-transparent rounded-full xl:px-10 md:w-auto hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
+                class="inline-flex items-center justify-center w-full px-8 py-4 text-base font-medium leading-6 text-gray-900 bg-white border border-transparent rounded-full xl:px-10 md:w-auto hover:bg-white/80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
               >
                 Free LinkedIn & CV review
               </NuxtLink>

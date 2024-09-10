@@ -4,6 +4,6 @@
     <CatchupCourses />
     <CatchupServices />
     <CatchupPackages />
-    <LandingFooter />
+    <LandingFooter class="md:mt-20" />
   </div>
 </template>
