@@ -10,7 +10,7 @@
         <div class="space-y-5 py-5">
           <div
             v-for="(role, index) in roles"
-            class="bg-gray-50 pl-5 py-8 font-semibold rounded-lg"
+            class="bg-gray-50 pl-5 py-5 font-semibold rounded-lg"
             @click="selectRole(role)"
             :class="
               role === recruitsdetails.role
@@ -53,12 +53,17 @@ const router = useRouter();
 const recruitsdetails = reactive({ number: 1, role: null });
 
 const roles = [
-  "Online Shop Attendant ",
-  "Social Media Manager",
-  "Content Writer and SEO Specialist",
+  "Online Shop Attendant / E-commerce Operations",
+  "Social Media Community Manager",
+  "Social Media Paid Ads Specialist",
   "Digital Engagement and Customer Service",
   "UI/UX Designer",
-  " Digital Campaign Planner",
+  "WordPress Website Developer",
+  "Frontend Engineer",
+  "Data Analyst",
+  "Product Manager",
+  "AI and Machine Learning Specialist",
+  "Content Writer and SEO Specialist",
 ];
 
 const selectRole = (x) => {

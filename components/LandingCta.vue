@@ -38,7 +38,7 @@
                 target="_blank"
                 class="inline-flex items-center justify-center w-full px-8 py-4 text-base font-medium leading-6 text-gray-900 bg-white border border-transparent rounded-full xl:px-10 md:w-auto hover:bg-white/80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
               >
-                Free LinkedIn & CV review
+                Get Hired!
               </NuxtLink>
             </span>
           </div>

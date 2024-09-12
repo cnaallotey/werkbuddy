@@ -69,8 +69,11 @@ async function onSubmit() {
         <img src="/images/logo.png" class="h-12" alt="" />
       </a>
       <h1 class="text-2xl font-bold my-5">
-        Register for <span class="text-pink-500">Catchup +</span>
+        Register for <span class="text-pink-500">Catch-up+</span>
       </h1>
+      <p class="text-sm text-slate-500 mb-5">
+        Catch-up + currently available for Thrive Africa Past Students.
+      </p>
       <form action="submit" @submit.prevent="onSubmit()" class="space-y-4">
         <div class="grid gap-1.5">
           <label class="" for="name">Full Name</label>
@@ -172,7 +175,7 @@ async function onSubmit() {
             </label>
           </div>
         </div>
-        <p class="font-medium text-gray-600">Book you preffered service</p>
+        <p class="font-medium text-gray-600">Select your preffered service</p>
         <div class="grid grid-cols-1 gap-4 text-center sm:grid-cols-2">
           <div v-for="option in serviceOptions" :key="option.name">
             <label
