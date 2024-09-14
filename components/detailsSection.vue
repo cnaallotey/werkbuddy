@@ -2,7 +2,7 @@
   <div>
     <div class="mx-auto w-full max-w-sm lg:w-96">
       <div>
-        <NuxtLink to="/">
+        <NuxtLink to="/companies">
           <logodark-section />
         </NuxtLink>
         <h2 class="mt-6 text-3xl font-extrabold text-gray-900">Register your Company</h2>
