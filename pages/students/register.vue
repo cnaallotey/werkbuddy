@@ -143,7 +143,7 @@ async function onSubmit() {
             </div>
             <p class="text-sm">
               To sustain our operations, non-students of Thrive will be required to pay a
-              token fee of <b>50 Cedis</b> (or the equivalent amount in your country’s
+              token fee of <b>100 Cedis</b> (or the equivalent amount in your country’s
               currency) to access the LinkedIn and CV review services.
             </p>
             <div class="mt-4">
