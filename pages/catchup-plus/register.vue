@@ -1,6 +1,7 @@
 <script setup>
 const contact = ref({});
 const loading = ref(false);
+const route = useRoute();
 
 const periodOptions = [{ name: "One-Off" }, { name: "Monthly" }, { name: "Quarterly" }];
 
@@ -52,6 +53,12 @@ async function onSubmit() {
     loading.value = false;
   }
 }
+
+onMounted(() => {
+  if (route.query.package) {
+    period.value = route.query.package;
+  }
+});
 </script>
 
 <template>

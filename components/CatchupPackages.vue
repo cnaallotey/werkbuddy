@@ -2,27 +2,30 @@
 const program = [
   {
     name: "One-Off Session",
+    price: "50",
     nature:
       "Book a 30-minute, one-off call with a career mentor for immediate, personalized guidance on any career-related issues. Ideal for addressing urgent concerns or getting quick advice.",
     target: "Students (Senior High School to Undergraduate)",
     duration: "30 minutes for each session",
-    link: "/catchup-plus/register",
+    link: "/catchup-plus/register?package=One-Off",
   },
   {
     name: "Monthly Plan",
+    price: "150",
     nature:
       "Gain consistent support with 4 sessions per month. Perfect for ongoing career development, interview preparation, or project review, with each session lasting up to 30 minutes.",
     target: "Graduates and Professionals",
     duration: "30 minutes for each session",
-    link: "/catchup-plus/register",
+    link: "/catchup-plus/register?package=Monthly",
   },
   {
     name: "Quarterly Plan",
+    price: "400",
     nature:
       "Commit to a deeper mentorship experience with 5 sessions per month over a 3-month period. Ideal for those seeking comprehensive career strategy and long-term growth.",
     target: "Youth/Graduates/Students/Professionals",
     duration: "30 minutes for each session",
-    link: "/catchup-plus/register",
+    link: "/catchup-plus/register?package=Quarterly",
   },
 ];
 </script>
@@ -47,19 +50,17 @@ const program = [
           >
             <div class="p-6 sm:px-8 flex flex-col justify-between flex-1">
               <div>
-                <h2 class="text-2xl font-bold text-gray-900">
+                <h2 class="text-xl font-bold text-gray-900">
                   {{ item.name }}
                 </h2>
-
-                <p class="mt-2 text-gray-700">{{ item.nature }}</p>
-
-                <p class="mt-2 hidden sm:mt-4">
-                  <strong class="text-3xl font-bold text-gray-900 sm:text-4xl">
-                    20$
+                <p class="mt-2 sm:mt-4">
+                  <strong class="text-3xl font-black text-gray-900 sm:text-4xl">
+                    GH₵ {{ item.price }}
                   </strong>
 
-                  <span class="text-sm font-medium text-gray-700">/month</span>
+                  <span class="text-sm hidden font-medium text-gray-700">/month</span>
                 </p>
+                <p class="mt-4 text-gray-700">{{ item.nature }}</p>
               </div>
 
               <div>
@@ -80,7 +81,7 @@ const program = [
 
                 <a
                   class="mt-4 block rounded border border-pink-600 bg-pink-600 px-12 py-3 text-center text-sm font-medium text-white focus:outline-none focus:ring hover:bg-pink-500 active:text-pink-500 sm:mt-6"
-                  :href="item.link"
+                  :href="`${item.link}`"
                 >
                   Register
                 </a>
