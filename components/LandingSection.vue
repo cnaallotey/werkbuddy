@@ -14,19 +14,17 @@
 
         <div class="lg:py-24">
           <h2 class="text-3xl text-center md:text-left font-bold sm:text-4xl">
-            Free LinkedIn Account Audit and CV Review
+            Go Beyond Learning – Build the Work Experience Required to Land Your First Job
+            with Thrive Internships
           </h2>
 
           <p class="mt-4 text-center md:text-left text-gray-600">
-            Elevate your job search with our Free LinkedIn Account Audit and Free CV
-            Review services. Whether you're a student gearing up for your first
-            internship, a recent graduate seeking your first full-time role, or a
-            professional aiming to advance your career, our expert reviews can give you
-            the edge you need.
+            Real-world projects supervised by expert mentors, on-the-job training, and an
+            internship certificate.
           </p>
 
           <NuxtLink
-            to="/students/register"
+            to="https://thriveafrica.co/internships"
             class="inline-flex mt-10 items-center justify-center w-full px-8 py-4 text-base font-medium leading-6 text-white bg-gray-900 border border-transparent rounded-full xl:px-10 md:w-auto hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-800"
           >
             Start Now
